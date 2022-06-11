@@ -58,8 +58,9 @@ body{
     margin: 2rem 2.5rem;
 }
 h1{
-    margin: -2rem auto 2rem auto;
+    margin: -4rem auto 2rem auto;
     font-size: 3rem;
+    text-shadow: 6px 2px rgb(182, 181, 181);
 }
 .text-cont{
     margin: 1rem auto 1rem auto;
@@ -106,49 +107,10 @@ a{
     
     
 }
-@media (max-width: 1150px) {
-    .contss{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    p{
-        text-align: center;
-    }
-    .vidFrame{
-        object-fit: cover;
-        width:540px;
-        height:304px;
-        
-    }
-    
+h2{
+    text-shadow: 6px 2px rgb(182, 181, 181);
 }
-@media (max-width: 600px) {
-    .contss{
-        display: grid;
-        grid-template-columns: 1fr;
-    }.vidFrame{
-        
-        width:440px;
-        height:247.5px;
-        
-    }
-    .lenks{
-        display: none;
-    }
 
-}
-@media (max-width: 400px) {
-    .contss{
-        display: grid;
-        grid-template-columns: 1fr;
-    }.vidFrame{
-        
-        width:300px;
-        height:168.8px;
-        
-    }
-
-}
 .navBar{
     position: fixed;
     top: 0;
@@ -192,4 +154,58 @@ justify-content: space-around;
 }
 .titi{
     margin-bottom: 0.7rem;
+}
+@media (max-width: 1150px) {
+    .contss{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    p{
+        text-align: center;
+    }
+    .vidFrame{
+        object-fit: cover;
+        width:540px;
+        height:304px;
+        
+    }
+    
+}
+@media (max-width: 600px) {
+    .contss{
+        display: grid;
+        grid-template-columns: 1fr;
+    }.vidFrame{
+        
+        width:440px;
+        height:247.5px;
+        
+    }
+    .lenks{
+        display: none;
+    }.navBar{
+        justify-content: center;
+        align-items: center;
+    }.navLenks{
+        margin-right: 0;
+    }.text-cont{
+        max-width: max-content;
+        margin: 2rem 1rem 2rem 1rem;
+    }
+
+}
+@media (max-width: 400px) {
+    .contss{
+        display: grid;
+        grid-template-columns: 1fr;
+    }.vidFrame{
+        
+        width:300px;
+        height:168.8px;
+        
+    }.navLenks li a{
+
+        font-size: 1.3rem;
+    }
+
 }
